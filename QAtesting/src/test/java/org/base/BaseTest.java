@@ -22,7 +22,7 @@ public class BaseTest {
 	public static FileInputStream fis;
     PageObjects pageobjects;
 	
-	@BeforeTest
+	@BeforeSuite
 	public void setUp() {
 		if (driver == null) {
 		
@@ -63,7 +63,7 @@ public class BaseTest {
 
 	}
 	
-	@AfterTest
+	@AfterSuite
 	public void tearDown() {
 		if (driver!=null) {
 			driver.quit();

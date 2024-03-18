@@ -22,12 +22,12 @@ import com.google.inject.spi.Element;
 import io.reactivex.rxjava3.functions.Action;
 
 public class LoginTest extends BaseTest {
-	
+
 	String os;
 	PageObjects pageobjects;
 
 	@Test
-	public void login() throws InterruptedException {
+	public LoginTest login() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 		PageObjects elm = new PageObjects(driver);
@@ -41,17 +41,22 @@ public class LoginTest extends BaseTest {
 				TimeUnit.SECONDS);
 		elm.employee_list.click();
 		Thread.sleep(1000);
+		return this;
+	}
+
+	@Test
+	public LoginTest empDetails() throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
 		elm.employee_list.click();
 		Thread.sleep(1000);
 		elm.add_emp_button.click();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
-		//elm.image_upload.click();
-		//Thread.sleep(2000);
-		//WebElement up = driver.findElement(By.cssSelector("#photo-preview-lable"));
-		//System.out.println("picture is uploaded");
-		//up.sendKeys("C:\\Users\\arunk\\Desktop\\QATest\\QAtesting\\src\\main\\arun_1.jpg");
-		//elm.image_upload.sendKeys(OR.getProperty("image_upload"));
+		// WebElement chooseFile =
+		// driver.findElement(By.xpath("//label[@id='photo-preview-lable']"));
+		// chooseFile.sendKeys("/QAtesting/src/main/arun_1.jpg");
 		elm.firstname.sendKeys(OR.getProperty("firstname"));
 		elm.secondname.sendKeys(OR.getProperty("middlename"));
 		elm.lastname.sendKeys(OR.getProperty("lastname"));
@@ -73,86 +78,127 @@ public class LoginTest extends BaseTest {
 		elm.adminrole_dropdown.click();
 		Thread.sleep(2000);
 		elm.adminrole_dropdown2.click();
-        Thread.sleep(2000);
-        elm.all_regions_toggle.click();
-        elm.select_regions_dropdown.click();
-        elm.select_regions_dropdown2.click();
-        assertTrue(elm.selected_india_label.isDisplayed(), "India is selected");
-        String india_label = elm.selected_india_label.getText();
-        System.out.println("The selected label is :"+ india_label);
-        Thread.sleep(1000);
-        elm.selected_location_toggle.click();
-        elm.selected_location_dropdown.click();
-        elm.select_location_dropdown2.click();
-        Thread.sleep(1000);
+		Thread.sleep(2000);
+		elm.all_regions_toggle.click();
+		elm.select_regions_dropdown.click();
+		elm.select_regions_dropdown2.click();
+		assertTrue(elm.selected_india_label.isDisplayed(), "India is selected");
+		String india_label = elm.selected_india_label.getText();
+		System.out.println("The selected label is :" + india_label);
+		Thread.sleep(1000);
+		elm.selected_location_toggle.click();
+		elm.selected_location_dropdown.click();
+		elm.select_location_dropdown2.click();
+		Thread.sleep(1000);
 		elm.next_button.click();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
-		assertTrue(elm.personal_details_title.isDisplayed(),"Personal details title is shown");
+		return this;
+	}
+
+	@Test
+	public LoginTest personalDetails() throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
+		assertTrue(elm.personal_details_title.isDisplayed(), "Personal details title is shown");
 		String personal_details_title = elm.personal_details_title.getText();
-		System.out.println("the personal details is:"+ personal_details_title);
-		assertEquals(personal_details_title,"Personal Details");
-        Thread.sleep(1000);
+		System.out.println("the personal details is:" + personal_details_title);
+		assertEquals(personal_details_title, "Personal Details");
+		Thread.sleep(1000);
 		elm.personal_details_next.click();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
-		assertTrue(elm.employment_details_title.isDisplayed(),"Employment Details title is shown");
+		return this;
+	}
+
+	@Test
+	public LoginTest employmentDetails() throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
+		assertTrue(elm.employment_details_title.isDisplayed(), "Employment Details title is shown");
 		String employment_details_title = elm.employment_details_title.getText();
-		System.out.println("the employment details is:"+ employment_details_title);
-		assertEquals(employment_details_title,"Employment Details");
+		System.out.println("the employment details is:" + employment_details_title);
+		assertEquals(employment_details_title, "Employment Details");
 		elm.employee_status.click();
 		elm.employee_status2.click();
-		elm.comment.sendKeys("asasdfghjkl;lkfdsdfghjklkjhgfdsdfgh");
+		elm.comment.sendKeys("comments");
 		elm.personal_details_next.click();
-		
-		assertTrue(elm.contact_details_title.isDisplayed(),"Contact Details title is shown");
+		return this;
+	}
+
+	@Test
+	public LoginTest contactDetails() throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
+		assertTrue(elm.contact_details_title.isDisplayed(), "Contact Details title is shown");
 		String contact_details_title = elm.contact_details_title.getText();
-		System.out.println("the contact details is:"+ contact_details_title);
-		assertEquals(contact_details_title,"Contact Details");
+		System.out.println("the contact details is:" + contact_details_title);
+		assertEquals(contact_details_title, "Contact Details");
 		elm.personal_details_next.click();
-		//elm.other_id.click();
+		// elm.other_id.click();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
-		assertTrue(elm.Onboarding_title.isDisplayed(),"Onboarding title is shown");
+		return this;
+	}
+
+	@Test
+	public LoginTest OnboardingDetails() throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
+		assertTrue(elm.Onboarding_title.isDisplayed(), "Onboarding title is shown");
 		String Onboarding_title = elm.Onboarding_title.getText();
-		System.out.println("the Onboarding title is:"+ Onboarding_title);
-		assertEquals(Onboarding_title,"Onboarding");
+		System.out.println("the Onboarding title is:" + Onboarding_title);
+		assertEquals(Onboarding_title, "Onboarding");
 		Thread.sleep(2000);
 		elm.onboarding_dropdown.click();
 		elm.onboarding_dropdown2.click();
 		elm.save_button.click();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
-		assertTrue(elm.success_toast.isDisplayed(),"Success toast is shown");
+		assertTrue(elm.success_toast.isDisplayed(), "Success toast is shown");
 		String success_toast = elm.success_toast.getText();
-		System.out.println("the employment details is:"+ success_toast);
-		assertEquals(success_toast,"Successfully Saved");
-		
+		System.out.println("the employment details is:" + success_toast);
+		assertEquals(success_toast, "Successfully Saved");
+
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
+		return this;
+	}
+
+	@Test
+	public LoginTest verifyAllDetails() throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
 		elm.personal_details_button.click();
 		Thread.sleep(1000);
 		String verifyfirstname = elm.verify_firstname.getAttribute("value");
-		System.out.println("the first name is:"+ verifyfirstname);
-		
+		System.out.println("the first name is:" + verifyfirstname);
+
 		String verifymiddlename = elm.verify_lastname.getAttribute("value");
-		System.out.println("the last name is:"+ verifymiddlename);
-		
+		System.out.println("the last name is:" + verifymiddlename);
+	
 		String verifylastname = elm.verify_middlename.getAttribute("value");
-		System.out.println("the middle name is:"+ verifylastname);
-		
+		System.out.println("the middle name is:" + verifylastname);
+
 		String verifyempid = elm.verify_employeeid.getAttribute("value");
-		System.out.println("the employeeid name is:"+ verifyempid);
-		
+		System.out.println("the employeeid name is:" + verifyempid);
+
 		elm.logout_button.click();
 		Thread.sleep(1000);
-		//elm.logout_button2.click();
+		// elm.logout_button2.click();
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 				TimeUnit.SECONDS);
+		return this;
+
 	}
-	
-	/*@Test
-	public void  create_agoal() throws InterruptedException {
+
+	@Test
+	public LoginTest creating_a_goal() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 		PageObjects elm = new PageObjects(driver);
@@ -186,7 +232,17 @@ public class LoginTest extends BaseTest {
 		elm.source_editbox.sendKeys(OR.getProperty("image_upload_goal"));
 		elm.ok_button.click();
 		elm.save_button2.click();
-		
+
+		return this;
+
+	}
+	
+	
+	public LoginTest verify_created_data () throws InterruptedException {
+		this.driver = driver;
+		PageFactory.initElements(this.driver, this);
+		PageObjects elm = new PageObjects(driver);
+
 		assertTrue(elm.create_goal_username.isDisplayed(),"Admin is shown");
 		String create_goal_username_text = elm.create_goal_username.getText();
 		System.out.println("the employment details is:"+ create_goal_username_text);
@@ -201,10 +257,7 @@ public class LoginTest extends BaseTest {
 		String duedate_name_text = elm.duedate_name.getText();
 		System.out.println("the duedate text is:"+ duedate_name_text);
 		assertEquals(duedate_name_text,"2024-03-20");
-	
+		return this;
 
-	}*/
-
-	
-	
+}
 }

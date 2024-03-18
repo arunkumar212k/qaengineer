@@ -3,8 +3,8 @@
 <suite name="QA test">
 	<test name="Login test">
 		<classes>
-			<class name="org.testcases.LoginTest"/>
-			<class name="org.testcases.CreateGoal"/>
+			<class name="org.testsuite.QAtestsuite"/>
+		
 		</classes>
 	</test>  <!--
 	Test -->
