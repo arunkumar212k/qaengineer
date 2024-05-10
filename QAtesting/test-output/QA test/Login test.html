@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 18 17:04:50 IST 2024</td>
+<td>Started on:</td><td>Tue Apr 02 15:43:38 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59622 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15264 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,124 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='org.testsuite.QAtestsuite.verify_all_details()'><b>verify_all_details</b><br>Test class: org.testsuite.QAtestsuite<br>Parameters: public void org.testsuite.QAtestsuite.verify_all_details(java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //a[contains(text(),&apos;Personal Details &apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ARUN&apos;, ip: &apos;10.0.0.124&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at org.testcases.LoginTest.verifyAllDetails(LoginTest.java:175)
-	at org.testsuite.QAtestsuite.verify_all_details(QAtestsuite.java:29)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2075093711", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2075093711'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //a[contains(text(),&apos;Personal Details &apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ARUN&apos;, ip: &apos;10.0.0.124&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at org.testcases.LoginTest.verifyAllDetails(LoginTest.java:175)
-	at org.testsuite.QAtestsuite.verify_all_details(QAtestsuite.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>org.testsuite.QAtestsuite@c9d0d6</td></tr>
-<tr>
-<td title='org.testsuite.QAtestsuite.verify_pageDetails()'><b>verify_pageDetails</b><br>Test class: org.testsuite.QAtestsuite<br>Parameters: public void org.testsuite.QAtestsuite.verify_pageDetails(java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //h4[contains(text(),&apos;Personal Details&apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ARUN&apos;, ip: &apos;10.0.0.124&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at org.testcases.LoginTest.personalDetails(LoginTest.java:102)
-	at org.testsuite.QAtestsuite.verify_pageDetails(QAtestsuite.java:21)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace679442449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace679442449'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //h4[contains(text(),&apos;Personal Details&apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ARUN&apos;, ip: &apos;10.0.0.124&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at org.testcases.LoginTest.personalDetails(LoginTest.java:102)
-	at org.testsuite.QAtestsuite.verify_pageDetails(QAtestsuite.java:21)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>org.testsuite.QAtestsuite@c9d0d6</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -193,15 +75,10 @@ Driver info: driver.version: RemoteWebDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.testsuite.QAtestsuite.verify_empdetails()'><b>verify_empdetails</b><br>Test class: org.testsuite.QAtestsuite<br>Parameters: public void org.testsuite.QAtestsuite.verify_empdetails(java.lang.reflect.Method) throws java.lang.InterruptedException</td>
+<td title='org.testsuite.Trainingtestsuite.verify_login_test()'><b>verify_login_test</b><br>Test class: org.testsuite.Trainingtestsuite<br>Parameters: public void org.testsuite.Trainingtestsuite.verify_login_test(java.lang.reflect.Method) throws java.lang.Exception</td>
 <td></td>
-<td>29</td>
-<td>org.testsuite.QAtestsuite@c9d0d6</td></tr>
-<tr>
-<td title='org.testsuite.QAtestsuite.verify_login_test()'><b>verify_login_test</b><br>Test class: org.testsuite.QAtestsuite<br>Parameters: public void org.testsuite.QAtestsuite.verify_login_test(java.lang.reflect.Method) throws java.lang.InterruptedException</td>
-<td></td>
-<td>10</td>
-<td>org.testsuite.QAtestsuite@c9d0d6</td></tr>
+<td>15</td>
+<td>org.testsuite.Trainingtestsuite@416c58f5</td></tr>
 </table><p>
 </body>
 </html>

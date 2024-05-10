@@ -26,7 +26,7 @@ public class LoginTest extends BaseTest {
 	String os;
 	PageObjects pageobjects;
 
-	@Test
+	
 	public LoginTest login() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest {
 		return this;
 	}
 
-	@Test
+	
 	public LoginTest empDetails() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -112,7 +112,7 @@ public class LoginTest extends BaseTest {
 		return this;
 	}
 
-	@Test
+	
 	public LoginTest employmentDetails() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -128,7 +128,7 @@ public class LoginTest extends BaseTest {
 		return this;
 	}
 
-	@Test
+
 	public LoginTest contactDetails() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -144,7 +144,6 @@ public class LoginTest extends BaseTest {
 		return this;
 	}
 
-	@Test
 	public LoginTest OnboardingDetails() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -169,7 +168,7 @@ public class LoginTest extends BaseTest {
 		return this;
 	}
 
-	@Test
+	
 	public LoginTest verifyAllDetails() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -197,7 +196,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test
+	
 	public LoginTest creating_a_goal() throws InterruptedException {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -260,4 +259,9 @@ public class LoginTest extends BaseTest {
 		return this;
 
 }
+	
+	private void btnClic() {
+		List<WebElement> elements = driver.findElements(By.xpath("//[@value='Google Search']"));
+		elements.get(2).click();
+	}
 }

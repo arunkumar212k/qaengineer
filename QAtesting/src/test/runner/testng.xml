@@ -3,7 +3,7 @@
 <suite name="QA test">
 	<test name="Login test">
 		<classes>
-			<class name="org.testsuite.QAtestsuite"/>
+			<class name="org.testsuite.Trainingtestsuite"/>
 		
 		</classes>
 	</test>  <!--

@@ -9,8 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class PageObjects extends BaseTest{
-
+	WebDriver driver;
+	
 	public PageObjects(WebDriver driver) {
+		System.out.println("driver is:"+ driver);
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 	}
@@ -347,6 +349,9 @@ public class PageObjects extends BaseTest{
 	private static final String logout_button2_xpath= "//a[contains(text(),'Logout from all browsers')]";
 	@FindAll({@FindBy(xpath = logout_button2_xpath)})
 	public WebElement logout_button2;
-	
+
+	private static final String attendance_xpath = "(//span[contains(text(),'Leave')])[1]";
+	@FindAll({ @FindBy(xpath = attendance_xpath) })
+	public WebElement attendance;
 }
 

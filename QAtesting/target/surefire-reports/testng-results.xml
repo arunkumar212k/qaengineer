@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-18T11:54:04Z" name="QA test" finished-at="2024-03-18T11:55:56Z" duration-ms="111193">
+  <suite started-at="2024-03-18T17:07:44Z" name="QA test" finished-at="2024-03-18T17:09:55Z" duration-ms="131289">
     <groups>
     </groups>
-    <test started-at="2024-03-18T11:54:04Z" name="Login test" finished-at="2024-03-18T11:55:56Z" duration-ms="111193">
+    <test started-at="2024-03-18T17:07:44Z" name="Login test" finished-at="2024-03-18T17:09:55Z" duration-ms="131289">
       <class name="org.testsuite.QAtestsuite">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:53:58Z" name="setUp" finished-at="2024-03-18T11:54:04Z" duration-ms="6197" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:07:34Z" name="setUp" finished-at="2024-03-18T17:07:44Z" duration-ms="9288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verify_login_test(java.lang.reflect.Method)[pri:1, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:54:04Z" name="verify_login_test" finished-at="2024-03-18T11:54:15Z" duration-ms="10380" status="PASS">
+        <test-method signature="verify_login_test(java.lang.reflect.Method)[pri:1, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:07:44Z" name="verify_login_test" finished-at="2024-03-18T17:08:04Z" duration-ms="20423" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login_test -->
-        <test-method signature="verify_empdetails(java.lang.reflect.Method)[pri:2, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:54:15Z" name="verify_empdetails" finished-at="2024-03-18T11:54:45Z" duration-ms="30139" status="PASS">
+        <test-method signature="verify_empdetails(java.lang.reflect.Method)[pri:2, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:08:04Z" name="verify_empdetails" finished-at="2024-03-18T17:08:32Z" duration-ms="27829" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_empdetails -->
-        <test-method signature="verify_pageDetails(java.lang.reflect.Method)[pri:3, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:54:45Z" name="verify_pageDetails" finished-at="2024-03-18T11:55:14Z" duration-ms="28617" status="PASS">
+        <test-method signature="verify_pageDetails(java.lang.reflect.Method)[pri:3, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:08:32Z" name="verify_pageDetails" finished-at="2024-03-18T17:08:59Z" duration-ms="27594" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_pageDetails -->
-        <test-method signature="verify_all_details(java.lang.reflect.Method)[pri:4, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:55:14Z" name="verify_all_details" finished-at="2024-03-18T11:55:25Z" duration-ms="11419" status="PASS">
+        <test-method signature="verify_all_details(java.lang.reflect.Method)[pri:4, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:08:59Z" name="verify_all_details" finished-at="2024-03-18T17:09:17Z" duration-ms="17268" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_all_details -->
-        <test-method signature="verify_creating_goal(java.lang.reflect.Method)[pri:5, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:55:25Z" name="verify_creating_goal" finished-at="2024-03-18T11:55:56Z" duration-ms="30616" status="PASS">
+        <test-method signature="verify_creating_goal(java.lang.reflect.Method)[pri:5, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:09:17Z" name="verify_creating_goal" finished-at="2024-03-18T17:09:55Z" duration-ms="38125" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_creating_goal -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T11:55:56Z" name="tearDown" finished-at="2024-03-18T11:55:56Z" duration-ms="400" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testsuite.QAtestsuite@6d07a63d]" started-at="2024-03-18T17:09:55Z" name="tearDown" finished-at="2024-03-18T17:09:56Z" duration-ms="564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

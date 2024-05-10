@@ -3,20 +3,17 @@
 <suite name="Failed suite [QA test]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Login test(failed)" verbose="0">
     <classes>
-      <class name="org.testcases.LoginTest">
+      <class name="org.testsuite.QAtestsuite">
         <methods>
-          <include name="login"/>
+          <include name="verify_login_test"/>
+          <include name="verify_creating_goal"/>
+          <include name="verify_empdetails"/>
+          <include name="verify_all_details"/>
+          <include name="verify_pageDetails"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.testcases.LoginTest -->
-      <class name="org.testcases.CreateGoal">
-        <methods>
-          <include name="create_agoal"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- org.testcases.CreateGoal -->
+      </class> <!-- org.testsuite.QAtestsuite -->
     </classes>
   </test> <!-- Login test(failed) -->
 </suite> <!-- Failed suite [QA test] -->

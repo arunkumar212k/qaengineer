@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testcases.LoginTest;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -20,7 +21,8 @@ public class BaseTest {
 	public static Properties config = new Properties();
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
-    PageObjects pageobjects;
+    public PageObjects pageobjects;
+    public LoginTest logintest;
 	
 	@BeforeSuite
 	public void setUp() {
@@ -51,7 +53,7 @@ public class BaseTest {
 				e.printStackTrace();
 			}
 			if (config.getProperty("browser").equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
 				driver = new ChromeDriver();
 			}
 			

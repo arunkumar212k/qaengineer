@@ -9,37 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">QA test</th></tr>
-<tr><td><a href="#t0">Login test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">2</td><td class="num">59,622</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Login test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">15,264</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">QA test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">org.testsuite.QAtestsuite</td><td><a href="#m0">verify_all_details</a></td><td rowspan="1">1710761740238</td><td rowspan="1">10066</td></tr><tr class="failedeven"><td><a href="#m1">verify_pageDetails</a></td><td rowspan="1">1710761730182</td><td rowspan="1">10051</td></tr><tr><th colspan="4">Login test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">org.testsuite.QAtestsuite</td><td><a href="#m2">verify_empdetails</a></td><td rowspan="1">1710761700793</td><td rowspan="1">29385</td></tr><tr class="passedeven"><td><a href="#m3">verify_login_test</a></td><td rowspan="1">1710761690695</td><td rowspan="1">10095</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">QA test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testsuite.Trainingtestsuite</td><td><a href="#m0">verify_login_test</a></td><td rowspan="1">1712052818368</td><td rowspan="1">15249</td></tr></tbody>
 </table>
-<h2>Login test</h2><h3 id="m0">org.testsuite.QAtestsuite#verify_all_details</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void org.testsuite.QAtestsuite.verify_all_details(java.lang.reflect.Method) throws java.lang.InterruptedException</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //a[contains(text(),&apos;Personal Details &apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ARUN&apos;, ip: &apos;10.0.0.124&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at org.testcases.LoginTest.verifyAllDetails(LoginTest.java:175)
-	at org.testsuite.QAtestsuite.verify_all_details(QAtestsuite.java:29)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.testsuite.QAtestsuite#verify_pageDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void org.testsuite.QAtestsuite.verify_pageDetails(java.lang.reflect.Method) throws java.lang.InterruptedException</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.all({By.xpath: //h4[contains(text(),&apos;Personal Details&apos;)]})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;ARUN&apos;, ip: &apos;10.0.0.124&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.support.pagefactory.ByAll.findElement(ByAll.java:58)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
-	at org.testcases.LoginTest.personalDetails(LoginTest.java:102)
-	at org.testsuite.QAtestsuite.verify_pageDetails(QAtestsuite.java:21)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">org.testsuite.QAtestsuite#verify_empdetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void org.testsuite.QAtestsuite.verify_empdetails(java.lang.reflect.Method) throws java.lang.InterruptedException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">org.testsuite.QAtestsuite#verify_login_test</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void org.testsuite.QAtestsuite.verify_login_test(java.lang.reflect.Method) throws java.lang.InterruptedException</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login test</h2><h3 id="m0">org.testsuite.Trainingtestsuite#verify_login_test</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void org.testsuite.Trainingtestsuite.verify_login_test(java.lang.reflect.Method) throws java.lang.Exception</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
